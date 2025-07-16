@@ -75,6 +75,9 @@ pip install -r requirements.txt  # flask, flask-cors, joblib, scikit-learn, nltk
 python app.py
 Flask server will run on: http://127.0.0.1:5000
 
+```
+
+```bash
 ### ✅ Frontend (Next.js)
 bash
 Copy code
@@ -84,24 +87,27 @@ npm run dev
 Frontend will run on: http://localhost:3000
 
 Make sure the backend is running before using the frontend.
-
 <br/>
-🌐 API Endpoint
+```
+
+### 🌐 API Endpoint
+
 POST /predict
 
 json
 Copy code
 Request Body:
 {
-  "text": "The president has announced a new economic policy."
+"text": "The president has announced a new economic policy."
 }
 
 Response:
 {
-  "prediction": "REAL"
+"prediction": "REAL"
 }
-<br/>
-🧠 Future Improvements
+
+### 🧠 Future Improvements
+
 Add support for deep learning models (e.g., LSTM, BERT)
 
 Use SHAP or LIME for model explainability
@@ -112,8 +118,8 @@ Deploy frontend (Vercel) + backend (Render or Railway)
 
 Add confidence scores with model.predict_proba()
 
-<br/>
-📄 License
+### 📄 License
+
 This project is for educational and portfolio purposes only.
 Dataset used is publicly available on Kaggle.
 
@@ -121,5 +127,3 @@ Dataset used is publicly available on Kaggle.
 Kaggle Fake/Real News Dataset
 
 Scikit-learn, Flask, Next.js documentation
-
-```
