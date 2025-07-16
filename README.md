@@ -75,7 +75,7 @@ pip install -r requirements.txt  # flask, flask-cors, joblib, scikit-learn, nltk
 python app.py
 Flask server will run on: http://127.0.0.1:5000
 
-✅ Frontend (Next.js)
+### ✅ Frontend (Next.js)
 bash
 Copy code
 cd frontend
