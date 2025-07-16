@@ -1,0 +1,6 @@
+backend/model/*.pkl
+__pycache__/
+node_modules/
+.env
+.env.*
+*.log
