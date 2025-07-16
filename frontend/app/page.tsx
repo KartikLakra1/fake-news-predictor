@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-6 bg-gray-50">
+    <main className="min-h-screen flex flex-col items-center justify-center p-6 bg-slate-950">
       <h1 className="text-3xl font-bold mb-4">📰 Fake News Detector</h1>
       <textarea
         className="w-full max-w-xl p-4 border border-gray-300 rounded-md mb-4"
