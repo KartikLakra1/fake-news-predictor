@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
-
 import traceback
 
 app = Flask(__name__)
+CORS(app)  # ✅ Enables requests from any origin
 
 # Load model and vectorizer
 model = joblib.load('model/fake_news_model.pkl')
@@ -22,7 +23,6 @@ def predict():
         if not input_text:
             return jsonify({'error': 'No text provided'}), 400
 
-        # Preprocess: Vectorize
         vectorized_input = vectorizer.transform([input_text])
         prediction = model.predict(vectorized_input)[0]
         label = 'REAL' if prediction == 1 else 'FAKE'
